@@ -4,7 +4,7 @@ public class MyApp {
 
 	public static void main(String[] args)
 	{
-		Coach obj = new BaseballCoach();
+		Coach obj = new TrackCoach();
 		System.out.println(obj.getDailyWorkout());
 		
 	}
