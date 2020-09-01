@@ -26,7 +26,7 @@
     </bean>    
     
     <bean id="myCoach"
-        class="com.kunitish.springdemo.BaseballCoach">  
+        class="com.kunitish.springdemo.TrackCoach">  
         <!-- Constructor ref --> 
         <constructor-arg ref="myFortuneService" />      
     </bean>

@@ -2,6 +2,12 @@ package com.kunitish.springdemo;
 
 public class TrackCoach implements Coach {
 
+	private FortuneService fortuneService;
+	
+	public TrackCoach(FortuneService theFortuneService)
+	{
+		this.fortuneService = theFortuneService;
+	}
 	@Override
 	public String getDailyWorkout()
 	{
@@ -10,8 +16,8 @@ public class TrackCoach implements Coach {
 	@Override
 	public String getDailyFortune()
 	{
-		return null;
+		return fortuneService.getFortune();
 	}
-
+    
 
 }
