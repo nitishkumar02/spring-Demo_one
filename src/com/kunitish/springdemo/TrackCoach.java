@@ -7,5 +7,11 @@ public class TrackCoach implements Coach {
 	{
 		return "run a hard 5k";
 	}
+	@Override
+	public String getDailyFortune()
+	{
+		return null;
+	}
+
 
 }

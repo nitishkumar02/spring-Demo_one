@@ -17,6 +17,11 @@ public class HelloSpringApp {
 		
 		System.out.println(theCoach.getDailyWorkout());
 		
+		/*
+		 * fullay assembled object after dependency injection
+		 */
+		System.out.println(theCoach.getDailyFortune());
+		
 		context.close();
 		
 		
