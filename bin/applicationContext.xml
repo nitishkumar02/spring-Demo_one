@@ -22,7 +22,7 @@
     -->
     
     <bean id="myCoach"
-        class="com.kunitish.springdemo.BaseballCoach">         
+        class="com.kunitish.springdemo.TrackCoach">         
     </bean>
     
 
