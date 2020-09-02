@@ -36,7 +36,10 @@
      <bean id="myCrircketCoach"
         class="com.kunitish.springdemo.CricketCoach">  
         <!-- Setter ref --> 
-        <property name = "fortuneService" ref="myFortuneService" />      
+        <property name = "fortuneService" ref="myFortuneService" />
+        <!-- Literal Value -->
+        <property name = "email" value ="nkgupta3541@gmail.com" /> 
+         <property name = "name" value ="Nitish" />     
     </bean>
 
 </beans>

@@ -19,5 +19,9 @@ public class SetterDemoApp {
 		System.out.println(theCoach.getDailyWorkout());
 		
 		System.out.println(theCoach.getDailyFortune());
+		
+		System.out.println(theCoach.getEmail());
+		System.out.println(theCoach.getName());
+		
 	}
 }
