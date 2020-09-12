@@ -2,7 +2,7 @@ package com.kunitish.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class BeanScopeDemoApp {
+public class BeanlifeCycleDemoApp {
 
 	public static void main(String[] args) {
 		/*
@@ -11,18 +11,13 @@ public class BeanScopeDemoApp {
 		 * 3.call the method
 		 * 4.close the context
 		 */
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beanScope-applicationContext.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beanLifecycle-applicationContext.xml");
 		
 		Coach theCoach = context.getBean("myCoach", Coach.class);
 		
-		Coach aplphaCoach = context.getBean("myCoach",Coach.class);
-		
-		System.out.println(theCoach.hashCode());
-		
-		System.out.println(aplphaCoach.hashCode()); 
+		System.out.println(theCoach.getDailyWorkout());
 		
 		
-
 	}
 
 }

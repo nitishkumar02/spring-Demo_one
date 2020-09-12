@@ -18,6 +18,18 @@ public class TrackCoach implements Coach {
 	{
 		return fortuneService.getFortune();
 	}
-    
+	
+	/*
+	 * 1.create an init method
+	 * 2.create a destroy method
+	 */
+	public void doMyStartupStuff()
+	{
+		System.out.println("Startup Stuff");
+	}
+	public void doMyCleanupStuff()
+	{
+		System.out.println("Closing Stuff");
+	}
 
 }
